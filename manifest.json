@@ -1,0 +1,19 @@
+{
+	"name" : "60 Minutes",
+	"description" : "60 Minutes, America's number one news program, now has a companion Chrome App!",
+	"version" : "0.50",	
+	"app" : {			
+		"launch": {			
+			"web_url" : "http://www.cbsnews.com/htdocs/60minutesapp/"
+		}
+	},
+	"icons" : {		
+		"16" : "16.jpg",
+		"128" : "128.png"
+	},
+	"permissions" : [
+		"history",
+		"unlimitedStorage",
+		"notifications"
+	]
+}

@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+		
+	<title>CBS 60 minutes</title>
+	<meta name="description" content="CBS 60 minutes Chrome Web App">
+	<meta name="author" content="CBS">
+
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/reset.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/video.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/style.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/filters.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/previous.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/overtime.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/video-sidebar.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/correspondents.css">
+
+	<!-- browser-detection -->
+	<script src="/htdocs/60minutesapp/js/helper/BrowserDetection.js"></script>
+	<!-- /browser-detection -->
+
+</head>
+<body>
+	
+	<div id="wrapper">
+	
+		<div id="top-logo">
+			<img alt="60 Minutes" src="/htdocs/60minutesapp/images/logo.png" />
+			<div class="back-button"><span>Back</span></div>
+		</div>
+
+		<div id="top-ot-logo">
+			<img alt="60 Minutes Overtime" src="/htdocs/60minutesapp/images/logo-ot.png" />
+			<div class="back-button"><span>Back</span></div>
+		</div>
+
+		<div id="page-container">
+		
+		    <!-- this-week section -->
+			<section id="this-week" class="page cover" data-id="1">
+			
+				<figure class="backgrounds">
+					
+				</figure>
+
+				<!-- highlights navitation -->
+				<nav id="main-sidebar" class="sidebar">
+					<div class="sidebar-inner">
+						<header>
+							<img alt="60 mins" class="logo" src="/htdocs/60minutesapp/images/logo-wide.png" />
+							<div class="date-block">
+								
+								<div class="date-sideline">
+									<div class="date-sideline-inner"></div>
+								</div>
+								
+								<div class="date-block-text">
+									<p class="unselectable">This week</p>
+									<span class="date-line unselectable"></span>
+								</div>
+								
+								<div class="date-sideline">
+									<div class="date-sideline-inner right"></div>
+								</div>
+								
+								<!-- <span class="date-year"></span> -->
+							</div>
+						</header>
+						<ul class="segments">
+							<li id="segment-2">	
+								<div class="inner">									
+									<h2></h2>						
+									<section data-height="200">
+										<h3></h3>
+										<blockquote></blockquote>
+										<span class="button btn-watch"><span class="unselectable">Watch Video</span></span>
+										<span class="button btn-overtime"><span class="unselectable">Watch Overtime</span></span>
+										<!--
+										<nav class="extra-links">
+											<a href="#" class="btn-fullstory unselectable">&bull; Read Full Story</a>											
+										</nav>
+										-->
+									</section>
+									<hr class="divider" />
+								</div>
+							</li>
+							<li id="segment-1">	
+								<div class="inner">
+									<h2></h2>
+									<section data-height="200">
+										<h3></h3>
+										<blockquote></blockquote>
+										<span class="button btn-watch"><span class="unselectable">Watch Video</span></span>
+										<span class="button btn-overtime"><span class="unselectable">Watch Overtime</span></span>
+										<!--
+										<nav class="extra-links">
+											<a href="#" class="btn-fullstory unselectable">&bull; Read Full Story</a>											
+										</nav>
+										-->
+									</section>
+									<hr class="divider" />
+								</div>
+							</li>								
+							<li id="segment-0">
+								<div class="inner">
+									<h2></h2>
+									<section data-height="200">
+										<h3></h3>
+										<blockquote></blockquote>
+										<span class="button btn-watch"><span class="unselectable">Watch Video</span></span>
+										<span class="button btn-overtime"><span class="unselectable">Watch Overtime</span></span>
+										<!--
+										<nav class="extra-links">
+											<a href="#" class="btn-fullstory unselectable">&bull; Read Full Story</a>											
+										</nav>
+										-->
+									</section>									
+								</div>
+							</li>								
+						</ul>
+						<!-- /#latest -->	
+					</div>
+					<!-- /.highlights-inner -->
+				</nav>
+				<!-- end of highlights navigation -->	
+								
+			</section>
+			<!-- /#this-week -->
+
+			<!-- previous segments section -->
+			<section id="previous-segments" class="page" data-id="2">
+				<div class="preloader"><div class="preloader-dial"></div></div>
+				<header class="filter-bar">
+					<nav>
+						<ul class="filters">
+							<li class="active"><a data-id="0" data-friendly-url="recent" href="#">Recent</a></li>
+							<li><a data-id="504146" data-friendly-url="newsmakers" href="#">Newsmakers</a></li>							
+							<li><a data-id="504147" data-friendly-url="politics" href="#">Politics</a></li>
+							<li><a data-id="504145" data-friendly-url="science" href="#">Science</a></li>
+							<li><a data-id="504143" data-friendly-url="business" href="#">Business</a></li>
+							<li><a data-id="504148" data-friendly-url="sports" href="#">Sports</a></li>
+							<li><a data-id="504144" data-friendly-url="entertainment" href="#">Entertainment</a></li>
+							<li><a data-id="505147" data-friendly-url="nature" href="#">Nature</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="grid">
+				</div>
+			</section>
+			<!-- /#previous-segments -->
+
+			<!-- 60-minutes-overtime section -->
+			<section id="sixty-minutes-overtime" class="page" data-id="3">			
+
+				<figure class="backgrounds-ot">
+				</figure>
+
+				<!-- highlights navitation -->
+				<nav id="ot-sidebar" class="sidebar">
+					<div class="sidebar-inner">
+						<header>
+							<img alt="60 mins" class="logo" src="/htdocs/60minutesapp/images/logo-ot-wide.gif" />
+							<div class="date-block">
+								<div class="date-sideline">
+									<div class="date-sideline-inner"></div>
+								</div>
+								
+								<div class="date-block-text">
+									<p class="unselectable">This week</p>
+									<span class="date-line unselectable"></span>
+								</div>
+								
+								<div class="date-sideline">
+									<div class="date-sideline-inner right"></div>
+								</div>							
+							</div>
+						</header>
+						<ul class="segments">
+							<li id="ot-segment-2">	
+								<div class="inner">									
+									<h2></h2>						
+									<section data-height="200">
+										<h3></h3>
+										<blockquote></blockquote>
+										<!-- <span class="button btn-watch"><span>Watch Video</span></span> -->
+										<span class="button btn-overtime"><span>Watch Overtime</span></span>
+									</section>
+									<hr class="divider" />
+								</div>
+							</li>
+							<li id="ot-segment-1">	
+								<div class="inner">
+									<h2></h2>
+									<section data-height="200">
+										<h3></h3>
+										<blockquote></blockquote>
+										<!-- <span class="button btn-watch"><span>Watch Video</span></span> -->
+										<span class="button btn-overtime"><span>Watch Overtime</span></span>
+									</section>
+									<hr class="divider" />
+								</div>
+							</li>								
+							<li id="ot-segment-0">
+								<div class="inner">
+									<h2></h2>
+									<section data-height="200">
+										<h3></h3>
+										<blockquote></blockquote>
+										<!-- <span class="button btn-watch"><span>Watch Video</span></span> -->
+										<span class="button btn-overtime"><span>Watch Overtime</span></span>
+									</section>	
+									<hr class="divider" />
+								</div>
+							</li>							
+						</ul>
+						<span class="btn-more-overtime">More from 60 Minutes Overtime</span>
+					</div>
+				</nav>					
+				<!-- end of highlights navigation -->				
+		
+                <div class="preloader hidden"><div class="preloader-dial"></div></div>
+                <header class="filter-bar">
+                    <nav>
+                        <ul class="filters">
+                            <li class="active"><a data-id="0" data-friendly-url="recent" href="#">Recent</a></li>
+                            <li><a data-id="1" data-friendly-url="overtime-original" href="#">Overtime Original</a></li>                            
+                            <li><a data-id="2" data-friendly-url="correspondent-candids" href="#">Correspondent Candids</a></li>
+                            <li><a data-id="3" data-friendly-url="60-rewind" href="#">60 Rewind</a></li>
+                            <li><a data-id="4" data-friendly-url="full-episodes" href="#">Full Episodes</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="grid"></div>
+                		
+			</section>
+			<!-- /#60-minutes-overtime section -->
+
+			<!-- correspondents section -->
+			<section id="correspondents" class="page" data-id="4">
+			    <header id="correspondents-bar">
+			    </header>
+				<div class="side-panel"></div>								
+				<div class="grid"></div>				
+				<div class="correspondent-details-container">
+				    <div class="correspondent-left-sidebar">
+				        <div class="correspondent-details">
+				            <h1>Steve Kroft</h1>
+				            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.</p>    
+				        </div>
+				    </div>
+				    <div class="corresponder-grid">
+				        <div class="preloader">
+				          <div class="preloader-dial"></div>
+				        </div>
+				        <ul class="clearfix">
+				            <!-- WILL POPULATE BY JS -->                                                        				            
+				        </ul>
+				    </div>    
+                </div>
+			</section>
+			<!-- /#correspondents -->
+
+		</div>
+		<!-- /#page-container -->
+			
+        <!-- Video Sidebar -->
+        <aside id="video-side-bar">
+            <nav>
+                <header>
+                    <span class="date-year"></span>
+                    <span class="date-day"></span>
+                </header>
+                <ul class="toolbar">
+                    <li id="toolbar-watching" data-target="watching-content">
+                        <!--<span class="arrow"></span>-->
+                        <span class="icon-watching">Watching</span>
+                    </li>
+                    <li id="toolbar-extras" data-target="extra-content">
+                        <span class="icon-extra">Extras</span>
+                    </li>
+                    <li id="toolbar-story" data-target="story-content">
+                        <span class="icon-story">Full story</span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- CONTENT CONTAINER -->
+            <section class="content-container">
+                <div class="btn-close"></div>
+                <div class="preloader">
+                    <div class="preloader-dial"></div>
+                </div>
+                <!-- WATCHING NOW CONTENT -->
+                <section class="watching-content content">
+                    <header>
+                        <h1>Mt. Athos: A visit to the holy mountain</h1>
+                        <time>March 20, 2011</time>
+                        <p class="description">
+                            <span class="text">
+                                "60 Minutes" gets extremely rare access to the monasteries at Mt. Athos, perhaps one of the most sacred places in Christianity
+                            </span>
+                            <span class="correspondent">Reported by: <b>Bob Simon</b></span>
+                        </p>
+                    </header>
+                    <section class="thumbnails-container">
+                        <figure class="watching-now-thumbnail watching-now-clicked-thumbnail">  
+                            <div class="overlay active"><div class="icon watching"></div><span class="text-top"></span><span class="text-bottom">Now Playing</span></div>                                                                                                            
+                            <span class="thumb"><span><img src="http://i.i.com.com/cnwk.1d/i/tim/2011/05/06/60_bodyguard_0506_320x240.jpg" title="" /></span></span>                                    
+                        </figure>                                                                     
+                    </section>
+                </section>
+                <!-- OVERTIME CONTENT -->
+                <!--<section class="overtime-content global-overtime-content content">
+                    <header>
+                        <span class="overtime-logo"><img src="/htdocs/60minutesapp/images/logo-ot-cropped-wide.gif" /></span>
+                        <time>March 20, 2011</time>
+                        <p class="description">
+                            Overtime Original                            
+                        </p>
+                    </header>
+                    <section class="overtime-thumbnail">
+                        <figure>  
+                            <div class="overlay"><div class="icon"></div><span class="text-top"></span><span class="text-bottom">Watch Now</span></div>                                                                                                               
+                            <span class="thumb"><span><img src="http://i.i.com.com/cnwk.1d/i/tim/2011/05/06/60_bodyguard_0506_320x240.jpg" title="" /></span></span>
+                            <figcaption><span></span><time></time></figcaption>
+                            <span class="hidden">
+                                <span class="title"></span>
+                                <span class="date"></span>
+                                <span class="description"></span>
+                                <span class="cast"></span>
+                            </span>                                                                
+                        </figure>    
+                    </section>                                                                                
+                    <section class="thumbnails-container">
+                        <h2></h2>                     
+                    </section>
+                </section>-->  
+                <!-- EXTRA CONTENT -->
+                <section class="extra-content content">
+                    <header>
+                        <h1><!--TITLE GOES HERE --></h1>
+                        <h2>Extra Clips</h2>                        
+                    </header>
+                    <section class="thumbnails-container">
+                                                                                                                      
+                    </section>                    
+                </section> 
+                <!-- STORY CONTENT -->   
+                <section class="story-content content">
+                    <header>
+                        <h1><!--TITLE GOES HERE --></h1>
+                        <time><!-- DATE GOES HERE --></time>                        
+                    </header>                    
+                    <section class="thumbnails-container">                                                
+                    </section>
+                    <!--
+                    <section class="reading-mode">
+                    	<a href="#" class="btn-reading-full-toggle" title="Switch to Reading Mode">Switch to Reading Mode</a>
+                    </section>
+                    -->
+                </section> 
+
+				<div class="preloader dark">
+					<div class="preloader-dial"></div>
+				</div>   
+            </section>
+
+        </aside>        
+        <!-- End Video Sidebar -->
+        
+		<div id="global-video-container" class="hidden"></div>
+		<div id="global-video-controls"></div>
+	</div>
+	<!-- /#wrapper -->
+
+	<footer class="unselectable">
+		<div id="share">
+			<span>Share App</span>
+			<ul>
+				<li class="facebook"><a href="#" target="_blank"><span></span></a></li>
+				<li class="twitter"><a href="#" target="_blank"><span></span></a></li>
+				<!--<li class="link"><a href="#" target="_blank"><span></span></a></li>-->
+			</ul>
+		</div>
+		<nav>
+			<ul id="primary-menu">
+				<li><a href="/htdocs/60minutesapp/this-week/" data-target="1" class="icon-this-week"><span>This Week</span></a></li>
+				<li><a href="/htdocs/60minutesapp/previous-segments/" data-target="2" class="icon-previous-segments"><span>Previous Segments</span></a></li>
+				<li><a href="/htdocs/60minutesapp/60-minutes-overtime/" data-target="3" class="icon-60-mins-overtime"><span>60 Minutes Overtime</span></a></li>
+				<li><a href="/htdocs/60minutesapp/correspondents/" data-target="4" class="icon-correspondents"><span>Correspondents</span></a></li>
+			</ul>
+		</nav>
+		<!--a id="sponsor">
+		</a-->
+	</footer>
+	
+	<!-- jQuery 1.5.2 -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="/htdocs/60minutesapp/js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+
+	<!-- Plugins -->
+	<script src="/htdocs/60minutesapp/js/view/plugins/scrollbar.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/plugins/throttle.js"></script>
+
+	<!-- Setup -->
+	<script src="/htdocs/60minutesapp/js/Namespaces.js"></script>
+	
+	<!-- Models -->
+	<script src="/htdocs/60minutesapp/js/model/Base.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/CorrespondentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/ThisWeek.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/SixtyMinsOvertimeGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/PreviousSegmentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/CorrespondentsGrid.js"></script>
+	
+	<!-- Views -->
+	<script src="/htdocs/60minutesapp/js/view/Base.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/ThisWeek.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/PreviousSegments.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/PreviousSegmentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/SixtyMinsOvertimeGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Correspondents.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/CorrespondentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/CorrespondentDetails.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/PageHolder.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Navigation.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Video.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Sidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Panel.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Grid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/VideoSidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Index.js"></script>
+	
+	<!-- Controllers -->
+	<script src="/htdocs/60minutesapp/js/controller/Base.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/ThisWeek.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/PreviousSegments.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/PreviousSegmentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/SixtyMinsOvertimeGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Correspondents.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/CorrespondentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/CorrespondentDetails.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/PageHolder.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Navigation.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Video.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Sidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Panel.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Grid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/VideoSidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Index.js"></script>
+	
+	<!-- Helpers -->
+	<script src="/htdocs/60minutesapp/js/helper/DataManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/LocalStorageManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/RouteManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/ViewManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/ControllerManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/Lookup.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/Bootstrap.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/Share.js"></script>
+	
+</body>
+</html>

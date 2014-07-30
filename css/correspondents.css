@@ -1,0 +1,445 @@
+#correspondents{
+    position:relative;	
+    background-color:#4C4C4C;
+    background-image: url("../images/noise_tile.png");
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: repeat;
+}
+
+    #correspondents #correspondents-bar {
+        position:absolute;
+        width:100%;
+        height:66px;
+        top:0px;
+        left:0px;  
+        background-color:#262626; 
+        z-index: 60;
+    }
+
+	#correspondents .side-panel{		
+		float:left;		
+		width:0px;
+		height:100%;
+	}
+	
+	#correspondents .grid{	    
+		width:99%;		
+		height:100%;
+		overflow:auto;
+		overflow-x:hidden;
+    margin:66px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    top:0px;
+    left:0px;	    
+    position:absolute;	    
+		-webkit-transition: top 600ms cubic-bezier(1.000, 0.000, 0.000, 1.000); 
+	}
+	
+		#correspondents .grid .grid-wrapper{
+			
+		}
+		
+		
+            #correspondents .grid::-webkit-scrollbar {                
+             -webkit-border-radius: 0px;
+             width:10px;
+             height:10px;
+             cursor:pointer;
+            }     
+          
+            #correspondents .grid::-webkit-scrollbar-thumb {  
+                -webkit-border-radius: 0px;                                  
+                border:1px solid #383838;                                
+                border-bottom:1px inset rgba(255,255,255,0.1);
+                -webkit-box-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+                background-image:url('../images/scrollback_bg.png');
+                background-repeat:no-repeat;
+                background-position:left center;            
+            }       
+            
+            #correspondents .grid::-webkit-scrollbar-button:start:decrement,
+            #correspondents .grid::-webkit-scrollbar-button:end:increment  {
+                height: 10px;
+                display: block;
+                background-color: transparent;                
+            }            
+            
+            #correspondents .grid::-webkit-scrollbar-track{
+       
+                background-color:#383838                 
+                
+            }		
+                 
+            
+          
+		#correspondents .grid ul{
+			text-align:center;
+			margin:0px auto;			
+			display:block;	
+            padding-bottom: 20px;		
+		}
+		
+  		
+		
+		#correspondents .grid ul li{
+			opacity:0;
+			display:block;			
+			height:220px;				
+			padding:0px 0px 25px 30px;		
+			list-style:none;
+			float:left;	
+			cursor:pointer;	
+			-webkit-transition:opacity 0.3s ease-out;
+	
+		}
+		
+			#correspondents .grid li figure{ 			 
+				display:block; 
+				width: 312px;				
+				padding-top:25px;	
+				-webkit-transition:margin-top 150ms ease-out;
+			}
+			
+			#correspondents .grid li figure:hover{
+					margin-top:-10px;
+			}
+			
+				#correspondents .grid li figure .fake-thumb{ 
+					background-color:rgba(255,255,255,0.13); padding:5px; margin:0px;
+					box-shadow: 0px -2px 4px rgba(0,0,0,0.3);
+					
+					-webkit-transition:background-color 150ms ease-out;
+				}
+				
+				#correspondents .grid li figure:hover .fake-thumb{ 
+					background-color:rgba(255,255,255,1);
+				}
+				
+				#correspondents .grid li figure .fake-thumb div{ 
+					width:302px;
+					height:166px;
+					background-image:url(../images/correspondent-background.png);
+					background-repeat:no-repeat;
+					background-position-y:-10px;
+					
+					-webkit-transition:all 150ms ease-out;
+				}
+				
+				#correspondents .grid li figure:hover .fake-thumb div{
+					height:186px;
+					background-position-y:0px;
+				}
+				
+				#correspondents .grid li figure .thumb{
+					float:left;
+					width:302px;
+					height:186px;
+					margin:-15px 0px 0px 5px;
+					background-repeat:no-repeat;
+					background-position-x:center;
+					
+					-webkit-transition:all 150ms ease-out;
+				}
+				
+				#correspondents .grid li figure:hover .thumb{
+					height:206px;
+					margin:-15px 0px 5px 5px;
+				}
+				
+				#correspondents .grid li figcaption{ 
+					text-align: center; font-size: 16px; color: #FFF; text-shadow: 0px -1px 0px rgba(0,0,0,0.4); padding-top:12px;
+				}
+					#correspondents .grid li figcaption p{
+						text-align: center; font-size: 12px; color: #B2B2B2; margin-top:2px; font-style:italic;
+					}
+						#correspondents .grid li figcaption p .count{
+							color: #CCC; font-weight: bold;
+						}
+					
+    #correspondents .correspondent-details-container {
+        margin:66px 0px 0px 0px;                
+        width:100%;      
+        height:100%;
+        position:absolute;
+        top:100%;  
+        left:0px;
+        overflow:hidden;        
+        /*background-color:#4c4c4c;*/
+        background-color:#4c4c4c;
+        background-image: url("../images/noise_tile.png");
+        background-position: top left;
+        background-repeat: repeat;
+        -webkit-transition: top 600ms cubic-bezier(1.000, 0.000, 0.000, 1.000);      
+    }
+
+        #correspondents .correspondent-details-container .correspondent-left-sidebar {
+            width:328px;                
+            height:100%;                
+            position:absolute;            
+            left:0px; 
+            background-color:#333333;  
+            background-image:url('../images/correnspondant-details-left-sidebar-background.jpg');
+            background-repeat:no-repeat;
+            float:left;
+        }
+        
+            #correspondents .correspondent-details-container .correspondent-left-sidebar .correspondent-details {                    
+                background-repeat:no-repeat; 
+                background-position:center top;
+                padding:281px 50px 0px 50px;   
+                margin-top:20px;                            
+            }
+            
+                #correspondents .correspondent-details-container .correspondent-left-sidebar .correspondent-details h1{
+                    text-align:center;
+                    margin:0px 15px 0px 5px;
+                    border-bottom:1px solid #5d5d5d; 
+                    font-family:"OswaldRegular";
+                    font-size: 36px;                
+                    color:#fff;
+                    text-shadow: rgba(0,0,0,0.3) 1px 1px 2px;
+                    padding-bottom:20px;
+                    
+                }
+        
+                #correspondents .correspondent-details-container .correspondent-left-sidebar .correspondent-details p{
+                    font-family:Georgia;
+                    font-size:14px;
+                    color:#fff;
+                    padding-top: 20px;
+                	text-align: center;
+                }
+            
+            #correspondents .correspondent-details-container .corresponder-grid {
+                width:99%;
+                float:left;
+                padding-left:328px;
+                height:100%;
+                overflow:auto;
+                overflow-x:hidden;
+                box-sizing:border-box;                
+                /*background-color:#4c4c4c;*/
+                /*background-image:url('../images/correnspondant-details-grid-background.jpg');*/    
+            }
+            
+            #correspondents .correspondent-details-container .preloader {
+                margin-left: 131px;    
+            }
+                
+
+            #correspondents .correspondent-details-container .corresponder-grid::-webkit-scrollbar {                
+             -webkit-border-radius: 0px;
+             width:10px;
+             height:10px;
+             cursor:pointer;             
+            }     
+          
+            #correspondents .correspondent-details-container .corresponder-grid::-webkit-scrollbar-thumb {  
+                -webkit-border-radius: 0px;                                  
+                border:1px solid #383838;                                
+                border-bottom:1px inset rgba(255,255,255,0.1);
+                -webkit-box-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+                background-image:url('../images/scrollback_bg.png');
+                background-repeat:no-repeat;
+                background-position:left center;            
+            }       
+            
+            #correspondents .correspondent-details-container .corresponder-grid::-webkit-scrollbar-button:start:decrement,
+            #correspondents .correspondent-details-container .corresponder-grid::-webkit-scrollbar-button:end:increment  {
+                height: 15px;
+                display: block;
+                background-color: transparent;                
+            }            
+            
+            #correspondents .correspondent-details-container .corresponder-grid::-webkit-scrollbar-track{
+       
+                background-color:#383838               
+                
+            }
+                #correspondents .correspondent-details-container .corresponder-grid ul {
+                     padding:0px 30px 0px 5px;
+                     margin:0px;
+                     min-height:100%;                                        
+                }
+                
+                #correspondents .correspondent-details-container .corresponder-grid ul li {
+                    float:left;
+                    list-style:none;
+                    text-align:center;
+                    margin:30px 0px 0px 10px;
+                    width:312px;    
+                    min-height:230px;
+                    max-height:230px; 
+                    cursor:pointer;  
+                    font-size:12px;
+                    color:#b2b2b2;                          
+                    opacity:0;  
+                    -webkit-transition: all 0.5s;
+                             
+                }     
+                
+                    #correspondents .correspondent-details-container .corresponder-grid ul li .thumb{
+                        border: 5px solid #646464;
+                        display:inline-block;                                 
+                        line-height:0px;       
+                        -webkit-box-shadow: 0px -3px 3px rgba(0,0,0,0.2);
+                        -webkit-transition: border .3s;
+                        width:302px;   
+                        height:166px;
+                        overflow:hidden;                                              
+                    }                                
+        
+                    #correspondents .correspondent-details-container .corresponder-grid ul li figure{ 
+                        margin-top:-10px;               
+                        display:block; 
+                        width:322px;
+                        cursor:pointer;
+                        position:relative;
+                        -webkit-transition:all 0.3s ease-out;
+                    }
+                
+                    
+                        #correspondents .correspondent-details-container .corresponder-grid ul li figure .overlay{ 
+                            width:302px;
+                            height:166px;
+                            position:absolute;
+                            top:5px;
+                            left:10px;                            
+                            background-color:rgba(26,26,26,0.8);
+                            text-align:center;
+                            color:#FFF;
+                            font-size:14px;
+                            
+                            opacity:0;
+                            
+                            -webkit-transition:all 150ms ease-out;
+                        }
+                        
+                        #correspondents .correspondent-details-container .corresponder-grid ul li figure:hover .overlay{
+                            opacity:1;
+                        }
+                    
+                        #correspondents .correspondent-details-container .corresponder-grid ul li figure .overlay .icon{
+                            display:inline-block;
+                            width:69px;
+                            height:69px;
+                            
+                            position:absolute;
+                            top:50%;
+                            left:50%;
+                            
+                            margin-top:-34px;
+                            margin-left:-35px;
+                            
+                            background-image:url(../images/sprites.png);
+                            background-position:-20px -850px;
+                        }
+                        
+                        #correspondents .correspondent-details-container .corresponder-grid ul li figure .overlay-viewed{ 
+                            background-image:url(../images/item-viewed-overlay.png);                    
+                            position:absolute;
+                            width:302px;
+                            height:166px;
+                            position:absolute;
+                            top:5px;
+                            left:10px;
+                            opacity:1;
+                            -webkit-transition:opacity 150ms ease-out;
+                        }       
+                        
+                        #correspondents .correspondent-details-container .corresponder-grid ul li figure:hover .overlay-viewed{
+                            opacity:0
+                        }                        
+                        
+                           #correspondents .correspondent-details-container .corresponder-grid ul li b {
+                                font-family:"OswaldRegular";
+                                font-size: 16px;
+                                font-weight:normal;                
+                                color:#fff;
+                                display:block;
+                                padding-top:10px;
+                                padding-bottom:8px;
+                                text-shadow: rgba(46,46,46,1) 0px -1px 1px;
+                            }
+                            
+                            #correspondents .correspondent-details-container .corresponder-grid ul li figure:active .overlay .icon{
+                                background-position:-220px -850px;
+                            }
+                            
+                            #correspondents .correspondent-details-container .corresponder-grid ul li figure .overlay .icon.replay{
+                                background-position:-20px -930px;
+                            }
+                            
+                            #correspondents .correspondent-details-container .corresponder-grid ul li figure:active .overlay .icon.replay{
+                                background-position:-220px -930px;
+                            }
+                            
+                            #correspondents .correspondent-details-container .corresponder-grid ul li figure .overlay .text-top{
+                                position:relative;
+                                display:block;
+                                width:200px;
+                                height:20px;
+                                top:50%;
+                                margin:-61px auto 0px auto;
+                            }
+                            
+                            #correspondents .correspondent-details-container .corresponder-grid ul li figure .overlay .text-bottom{
+                                position:relative;
+                                display:block;
+                                width:200px;
+                                height:20px;
+                                top:50%;
+                                margin:85px auto 0px auto;
+                            }
+                        
+                        #correspondents .correspondent-details-container .corresponder-grid ul li figure .ribbon{ 
+                            width:50px;
+                            height:50px;
+                            background-image:url(../images/sprites.png);
+                            background-position:-220px -5px;
+                            position:absolute;
+                            top:-2px;
+                            right:6px;
+                        }
+                        
+                        #correspondents .correspondent-details-container .corresponder-grid ul li figcaption{ 
+                            text-align: center; font-size: 12px; color: #B2B2B2; padding-top:0px;
+                        }
+                            #correspondents .correspondent-details-container .corresponder-grid ul li figcaption .category{
+                                text-align: center; font-size: 12px; color: #B2B2B2; margin-top:5px;
+                            }
+                    
+                        
+                        /* OLD ----------------------------------------*/        
+        
+ 
+                                        
+                    
+                    #correspondents .correspondent-details-container .corresponder-grid ul li:last-child:after {
+                        clear:both;
+                    }  
+                                            
+
+                            
+                            #correspondents .correspondent-details-container .corresponder-grid ul li .thumb img{
+                                width:302px;
+                            }
+                            
+                            #correspondents .correspondent-details-container .corresponder-grid ul li .category {
+                                font-style: italic;
+                                border-left: 1px solid #b2b2b2;
+                                padding-left:8px;
+                                margin-left:5px;
+                            } 
+                                
+                            #correspondents .correspondent-details-container .corresponder-grid ul li:hover .thumb {
+                                border:5px solid white;    
+                            }
+                            
+/** TRANSITIONS **/
+    
+    #correspondents .no-transition {
+        -webkit-transition:all 0s;
+    }
+                        

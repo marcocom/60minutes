@@ -1,0 +1,55 @@
+.filter-bar {
+	background: #262626;
+	height: 66px; line-height: 66px;
+}
+
+	.filter-bar nav {
+		float: left;
+		position: relative;
+		left: 50%;
+	}
+
+		.filter-bar ul {
+			float: left;
+			position: relative;
+			left: -50%;
+			height: 30px;
+			margin-top: 17px;
+		}
+
+			.filter-bar ul li {
+				height: 30px; line-height: 30px;
+				float: left;
+				margin-right: 15px;
+				width: auto;
+				color:#fff;
+			}
+
+				.filter-bar ul li a {
+					display: block;
+					height: 30px; line-height: 30px;
+					background: #262626;
+					-webkit-border-radius: 6px; border-radius: 6px;
+					margin: 0; padding: 0 14px;
+					color:#fff;
+				}
+
+					.filter-bar ul .active a {
+						background-image: -webkit-gradient(linear, left top, left bottom, from(#d10211), to(#820107));
+			            background-image: -webkit-linear-gradient(top, #d10211, #820107);
+			            background-image: linear-gradient(top, #000, #1F1F1F);
+			            cursor:default;
+					}
+
+						.filter-bar ul li:not(.active) a:hover {
+							background: #3c3c3c;
+						}
+
+						.filter-bar ul li:not(.active) a:active {
+							background: #333;
+						}
+
+				.filters a:hover,
+				.sorters a:hover {
+					-webkit-transition: all 40ms ease-in-out;
+				}
