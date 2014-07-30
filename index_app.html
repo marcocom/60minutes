@@ -7,17 +7,17 @@
 	<meta name="description" content="CBS 60 minutes Chrome Web App">
 	<meta name="author" content="CBS">
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/video.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/filters.css">
-	<link rel="stylesheet" href="css/previous.css">
-	<link rel="stylesheet" href="css/overtime.css">
-	<link rel="stylesheet" href="css/video-sidebar.css">
-	<link rel="stylesheet" href="css/correspondents.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/reset.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/video.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/style.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/filters.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/previous.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/overtime.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/video-sidebar.css">
+	<link rel="stylesheet" href="/htdocs/60minutesapp/css/correspondents.css">
 
 	<!-- browser-detection -->
-	<script src="js/helper/BrowserDetection.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/BrowserDetection.js"></script>
 	<!-- /browser-detection -->
 
 </head>
@@ -26,12 +26,12 @@
 	<div id="wrapper">
 	
 		<div id="top-logo">
-			<img alt="60 Minutes" src="images/logo.png" />
+			<img alt="60 Minutes" src="/htdocs/60minutesapp/images/logo.png" />
 			<div class="back-button"><span>Back</span></div>
 		</div>
 
 		<div id="top-ot-logo">
-			<img alt="60 Minutes Overtime" src="images/logo-ot.png" />
+			<img alt="60 Minutes Overtime" src="/htdocs/60minutesapp/images/logo-ot.png" />
 			<div class="back-button"><span>Back</span></div>
 		</div>
 
@@ -48,7 +48,7 @@
 				<nav id="main-sidebar" class="sidebar">
 					<div class="sidebar-inner">
 						<header>
-							<img alt="60 mins" class="logo" src="images/logo-wide.png" />
+							<img alt="60 mins" class="logo" src="/htdocs/60minutesapp/images/logo-wide.png" />
 							<div class="date-block">
 								
 								<div class="date-sideline">
@@ -160,7 +160,7 @@
 				<nav id="ot-sidebar" class="sidebar">
 					<div class="sidebar-inner">
 						<header>
-							<img alt="60 mins" class="logo" src="images/logo-ot-wide.gif" />
+							<img alt="60 mins" class="logo" src="/htdocs/60minutesapp/images/logo-ot-wide.gif" />
 							<div class="date-block">
 								<div class="date-sideline">
 									<div class="date-sideline-inner"></div>
@@ -312,7 +312,7 @@
                 <!-- OVERTIME CONTENT -->
                 <!--<section class="overtime-content global-overtime-content content">
                     <header>
-                        <span class="overtime-logo"><img src="images/logo-ot-cropped-wide.gif" /></span>
+                        <span class="overtime-logo"><img src="/htdocs/60minutesapp/images/logo-ot-cropped-wide.gif" /></span>
                         <time>March 20, 2011</time>
                         <p class="description">
                             Overtime Original                            
@@ -384,10 +384,10 @@
 		</div>
 		<nav>
 			<ul id="primary-menu">
-				<li><a href="this-week/" data-target="1" class="icon-this-week"><span>This Week</span></a></li>
-				<li><a href="previous-segments/" data-target="2" class="icon-previous-segments"><span>Previous Segments</span></a></li>
-				<li><a href="60-minutes-overtime/" data-target="3" class="icon-60-mins-overtime"><span>60 Minutes Overtime</span></a></li>
-				<li><a href="correspondents/" data-target="4" class="icon-correspondents"><span>Correspondents</span></a></li>
+				<li><a href="/htdocs/60minutesapp/this-week/" data-target="1" class="icon-this-week"><span>This Week</span></a></li>
+				<li><a href="/htdocs/60minutesapp/previous-segments/" data-target="2" class="icon-previous-segments"><span>Previous Segments</span></a></li>
+				<li><a href="/htdocs/60minutesapp/60-minutes-overtime/" data-target="3" class="icon-60-mins-overtime"><span>60 Minutes Overtime</span></a></li>
+				<li><a href="/htdocs/60minutesapp/correspondents/" data-target="4" class="icon-correspondents"><span>Correspondents</span></a></li>
 			</ul>
 		</nav>
 		<!--a id="sponsor">
@@ -396,73 +396,73 @@
 	
 	<!-- jQuery 1.5.2 -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="/htdocs/60minutesapp/js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
 
 	<!-- Plugins -->
-	<script src="js/view/plugins/scrollbar.js"></script>
-	<script src="js/view/plugins/throttle.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/plugins/scrollbar.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/plugins/throttle.js"></script>
 
 	<!-- Setup -->
-	<script src="js/Namespaces.js"></script>
+	<script src="/htdocs/60minutesapp/js/Namespaces.js"></script>
 	
 	<!-- Models -->
-	<script src="js/model/Base.js"></script>
-	<script src="js/model/CorrespondentsGrid.js"></script>
-	<script src="js/model/ThisWeek.js"></script>
-	<script src="js/model/SixtyMinsOvertime.js"></script>
-	<script src="js/model/SixtyMinsOvertimeGrid.js"></script>
-	<script src="js/model/PreviousSegmentsGrid.js"></script>
-	<script src="js/model/CorrespondentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/Base.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/CorrespondentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/ThisWeek.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/SixtyMinsOvertimeGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/PreviousSegmentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/model/CorrespondentsGrid.js"></script>
 	
 	<!-- Views -->
-	<script src="js/view/Base.js"></script>
-	<script src="js/view/ThisWeek.js"></script>
-	<script src="js/view/SixtyMinsOvertime.js"></script>
-	<script src="js/view/PreviousSegments.js"></script>
-	<script src="js/view/PreviousSegmentsGrid.js"></script>
-	<script src="js/view/SixtyMinsOvertime.js"></script>
-	<script src="js/view/SixtyMinsOvertimeGrid.js"></script>
-	<script src="js/view/Correspondents.js"></script>
-	<script src="js/view/CorrespondentsGrid.js"></script>
-	<script src="js/view/CorrespondentDetails.js"></script>
-	<script src="js/view/PageHolder.js"></script>
-	<script src="js/view/Navigation.js"></script>
-	<script src="js/view/Video.js"></script>
-	<script src="js/view/Sidebar.js"></script>
-	<script src="js/view/Panel.js"></script>
-	<script src="js/view/Grid.js"></script>
-	<script src="js/view/VideoSidebar.js"></script>
-	<script src="js/view/Index.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Base.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/ThisWeek.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/PreviousSegments.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/PreviousSegmentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/SixtyMinsOvertimeGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Correspondents.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/CorrespondentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/CorrespondentDetails.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/PageHolder.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Navigation.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Video.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Sidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Panel.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Grid.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/VideoSidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/view/Index.js"></script>
 	
 	<!-- Controllers -->
-	<script src="js/controller/Base.js"></script>
-	<script src="js/controller/ThisWeek.js"></script>
-	<script src="js/controller/SixtyMinsOvertime.js"></script>
-	<script src="js/controller/PreviousSegments.js"></script>
-	<script src="js/controller/PreviousSegmentsGrid.js"></script>
-	<script src="js/controller/SixtyMinsOvertime.js"></script>
-	<script src="js/controller/SixtyMinsOvertimeGrid.js"></script>
-	<script src="js/controller/Correspondents.js"></script>
-	<script src="js/controller/CorrespondentsGrid.js"></script>
-	<script src="js/controller/CorrespondentDetails.js"></script>
-	<script src="js/controller/PageHolder.js"></script>
-	<script src="js/controller/Navigation.js"></script>
-	<script src="js/controller/Video.js"></script>
-	<script src="js/controller/Sidebar.js"></script>
-	<script src="js/controller/Panel.js"></script>
-	<script src="js/controller/Grid.js"></script>
-	<script src="js/controller/VideoSidebar.js"></script>
-	<script src="js/controller/Index.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Base.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/ThisWeek.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/PreviousSegments.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/PreviousSegmentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/SixtyMinsOvertime.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/SixtyMinsOvertimeGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Correspondents.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/CorrespondentsGrid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/CorrespondentDetails.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/PageHolder.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Navigation.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Video.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Sidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Panel.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Grid.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/VideoSidebar.js"></script>
+	<script src="/htdocs/60minutesapp/js/controller/Index.js"></script>
 	
 	<!-- Helpers -->
-	<script src="js/helper/DataManager.js"></script>
-	<script src="js/helper/LocalStorageManager.js"></script>
-	<script src="js/helper/RouteManager.js"></script>
-	<script src="js/helper/ViewManager.js"></script>
-	<script src="js/helper/ControllerManager.js"></script>
-	<script src="js/helper/Lookup.js"></script>
-	<script src="js/helper/Bootstrap.js"></script>
-	<script src="js/helper/Share.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/DataManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/LocalStorageManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/RouteManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/ViewManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/ControllerManager.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/Lookup.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/Bootstrap.js"></script>
+	<script src="/htdocs/60minutesapp/js/helper/Share.js"></script>
 	
 </body>
 </html>
